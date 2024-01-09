@@ -3,12 +3,6 @@ const assertEqual = function(actual, expected) {
   if (actual === Number(actual) && expected === Number(expected)) {
     return actual + expected;
 
-  } else if (actual === "" && expected === "") {
-    return actual + expected;
-
-  } else (actual !== Number(actual) || expected !== Number(expected));
-  console.log("Error: Function has a string and a number. They must be the same type in order to process.");
-};
 
 
 
