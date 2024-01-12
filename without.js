@@ -18,7 +18,7 @@ const assertArraysEqual = function (arr1, arr2) {
 }
 
 
-    function without(arr1, arr2) {
+    const without(arr1, arr2) => {
       let resultArr = []
       
       for (let i = 0; i < arr1.length; i++) {
