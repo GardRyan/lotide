@@ -1,8 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`❤️❤️❤️Assertion Passed: ${actual} = ${expected}`);
+const assertEqual = function(result, input) {
+  if (result === input) {
+    console.log(`❤️❤️❤️Assertion Passed: ${result} = ${input}`);
   }else {
-    console.log(`😔😔😔Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`😔😔😔Assertion Failed: ${result} !== ${input}`);
   }
   
   }
@@ -20,10 +20,11 @@ const countLetters = function(input) {
     }
 
   }
-  console.log(count);
+  return count;
 }
 
   //output expected 
 
   countLetters('LHL');
+
   // L appears twice, and H once
