@@ -9,20 +9,20 @@ const assertEqual = function(actual, expected) {
   
 };
 
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1.length !== arr2.length) {
-      return false;
-      //console.log("Array's are different lengths!")
-    }else if (arr1[i] !== arr2[i]) {
-      //console.log("Arrays are not the same");
+    if (arr1[i] !== arr2[i]) {
       return false;
     }
   }
 
-  //console.log("Arrays are the same");
   return true;
-}
+};
+
 
 
 eqArrays([1, 2, 3], [1, 2, 3]); // => true
