@@ -1,47 +1,8 @@
 // find the middle of the array
 // return those results
 //
-
-
-
-
-
-
-  // TEST/ASSERTION FUNCTIONS
-  function eqArrays(arr1, arr2) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1.length !== arr2.length) {
-        return false;
-        //console.log("Array's are different lengths!")
-      }else if (arr1[i] !== arr2[i]) {
-        //console.log("Arrays are not the same");
-        return false;
-      }
-    }
-  
-    //console.log("Arrays are the same");
-    return true;
-  }
-  
-
-const assertArraysEqual = function (arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1.length !== arr2.length) {
-      console.log("😔😔😔Arrays " + arr1 + " and " + arr2 + " are not equal!")
-      return;
-    }else if (arr1[i] !== arr2[i]) {
-      console.log("😔😔😔Arrays " + arr1 + " and " + arr2 + " are not equal!")
-      return;
-    }
-  }
-
-  
-  console.log("❤️❤️❤️Arrays " + arr1 + " and " + arr2 + " are equal!")
-  //return true;
-}
-
-
-// ACTUAL FUNCTION
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 
 const middle = function(array) {
@@ -70,3 +31,5 @@ middle([1, 2, 3]) // => [2]
 middle([1, 2, 3, 4, 5]) // => [3]
 middle([1, 2, 3, 4]) // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+
+module.exports = middle;
