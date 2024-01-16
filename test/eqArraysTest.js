@@ -5,4 +5,4 @@ const eqArrays = function(arr1, arr2) {
 
 }
 
-module.export = eqArrays;
+module.exports = eqArrays;
