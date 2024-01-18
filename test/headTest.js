@@ -1,8 +1,3 @@
-// const head = require('.../head');
-
-// function head(arr) {
-// //...
-// }
 
 const assert = require('chai').assert;
 const head   = require('../head');
