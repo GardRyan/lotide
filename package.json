@@ -1,0 +1,26 @@
+{
+  "name": "@res.gardner/lotide",
+  "version": "1.0.0",
+  "description": "res.gardner lotide clone project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GardRyan/lotide.git"
+  },
+  "author": "Ryan Gardner (https://github.com/GardRyan/lotide/tree/master)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GardRyan/lotide/issues"
+  },
+  "homepage": "https://github.com/GardRyan/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.1",
+    "mocha": "^9.2.2"
+  }
+}
